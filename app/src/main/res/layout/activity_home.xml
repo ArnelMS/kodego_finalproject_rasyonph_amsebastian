@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imgCoverPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_home"
+        tools:srcCompat="@drawable/bg_home" />
+
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:text="ARNEL MENDOZA SEBASTIAN"
+        android:textColor="#4E4E4E"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/imgCoverPhoto" />
+
+    <ImageView
+        android:id="@+id/imgProfilePhoto"
+        android:layout_width="152dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgCoverPhoto"
+        app:srcCompat="@drawable/profilephoto"
+        tools:srcCompat="@drawable/profilephoto" />
+
+    <TextView
+        android:id="@+id/tvStudentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:text="Student #: 20221105"
+        android:textColor="#404040"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentName" />
+
+    <TextView
+        android:id="@+id/tvCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:text="BSBA - Business Management"
+        android:textColor="#404040"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentNumber" />
+
+    <TextView
+        android:id="@+id/tvYearLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:text="Level: First Year"
+        android:textColor="#404040"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvCourse" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerHome"
+        android:layout_width="414dp"
+        android:layout_height="478dp"
+        android:layout_marginTop="60dp"
+        android:paddingStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfilePhoto" />
+
+    <TextView
+        android:id="@+id/tvCurrentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="172dp"
+        android:text="Date Today and Time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePhoto"
+        app:layout_constraintTop_toTopOf="@+id/imgCoverPhoto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
