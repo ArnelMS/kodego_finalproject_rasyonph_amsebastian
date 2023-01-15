@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //Binding username and Password button
-        binding.tvCreateNewAccount.setOnClickListener() {
+        binding.btnLogin.setOnClickListener() {
 
             //LOGIN
             var userName: String = binding.etvUsername.text.toString()

@@ -34,13 +34,13 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.imgProfilePhoto.setOnClickListener() {
             showCamera()
         }
         binding.imgCoverPhoto.setOnClickListener() {
             showCamera()
         }
-
 
     }
 
@@ -68,6 +68,7 @@ class HomeActivity : AppCompatActivity() {
             }
 
         }).onSameThread().check()
+
     }
 
     val cameraLauncher =
@@ -80,6 +81,7 @@ class HomeActivity : AppCompatActivity() {
                     binding.imgCoverPhoto.setImageBitmap(image2)
 
                 }
+
             }
         }
 }
